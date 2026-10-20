@@ -1,0 +1,44 @@
+### cadastrar cliente
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "nome",
+    "email": "email@email.com",
+    "senha": "senha",
+    "cpf": "12345678910",
+    "endereco": "endereco",
+    "telefone": "telefone"
+}
+
+### consultar cliente id
+GET http://localhost:3000/cliente/1
+
+### consultar cliente nome
+GET http://localhost:3000/cliente?nome=nome
+
+### listar clientes
+GET http://localhost:3000/clientes
+
+### atualizar cliente
+PATCH http://localhost:3000/cliente/1
+Content-Type: application/json
+
+{
+    "telefone": "novo telefone"
+}
+
+### deletar cliente
+DELETE http://localhost:3000/cliente/1
+
+### cadastrar veiculo
+POST http://localhost:3000/veiculo
+Content-Type: application/json
+
+{
+    "modelo": "modelo",
+    "marca": "marca",
+    "placa": "placa",
+    "rastreador": "rastreador",
+    "idCliente": "1"
+}

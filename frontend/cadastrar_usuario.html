@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="./js/cadastrar_usuario.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Login</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./cadastrar_usuario.html">Cadastrar Usuário</a>
+				<a href="./cadastrar_veiculo.html">Cadastrar Veículo</a>
+			</nav>
+		</header>
+		<main>
+			<form id="formUsuario">
+				<h1>Fazer Cadastro</h1>
+				<input type="text" placeholder="Nome" id="inputNome" />
+				<input type="text" placeholder="E-mail" id="inputEmail" />
+				<input type="text" placeholder="Senha" id="inputSenha" />
+				<input type="text" placeholder="CPF" id="inputCpf" />
+				<input type="text" placeholder="Endereco" id="inputEndereco" />
+				<input type="text" placeholder="Telefone" id="inputTelefone" />
+				<button>Cadastrar</button>
+			</form>
+			<p id="res"></p>
+		</main>
+	</body>
+</html>

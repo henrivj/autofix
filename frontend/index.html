@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script src="./js/login.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Login</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./cadastrar_usuario.html">Cadastrar Usuário</a>
+				<a href="./cadastrar_veiculo.html">Cadastrar Veículo</a>
+			</nav>
+		</header>
+		<main>
+			<form id="formLogin">
+				<h1>Faça Login</h1>
+				<input type="text" placeholder="Nome" id="inputNome" />
+				<input type="text" placeholder="E-mail" id="inputEmail" />
+				<input type="text" placeholder="Senha" id="inputSenha" />
+				<button>Entrar</button>
+			</form>
+			<div id="boasVindas" class="hidden">
+				<h1>Bem Vindo!</h1>
+				<p>Usuário Logado.</p>
+				<button onclick="localStorage.clear(); location.reload()">Logout</button>
+			</div>
+			<p id="res"></p>
+		</main>
+	</body>
+</html>
